@@ -1,0 +1,13 @@
+Synthetic documents (zero-based IDs)
+  0: apple tv
+  1: samsung tv
+  2: sony tv
+  3: apple samsung
+
+Boolean queries
+  apple                -> [0, 3]
+  apple & tv           -> [0]
+  samsung sony&tv      -> [1, 2, 3]
+  missing              -> []
+
+Whitespace = OR; & = AND; AND is evaluated first.

@@ -2,6 +2,22 @@
 
 A Python inverted index with Boolean search: whitespace means OR, `&` means AND, and AND has higher precedence. The program includes a small synthetic demonstration and can read user-supplied JSONL documents.
 
+## Example walkthrough
+
+Document IDs start at zero. `samsung sony&tv` means `samsung OR (sony AND tv)`, so it matches documents 1, 2, and 3. All four documents are printed in the example.
+
+![Synthetic example output](docs/demo-output.svg)
+
+Run from the repository root. For Java, create `build` if it does not already exist:
+
+```sh
+python examples/demo.py
+```
+
+[Runnable example](examples/) · [Plain-text output](examples/output.txt)
+
+The example and output visual were added for this portfolio in November 2026 using newly authored synthetic inputs. They are separate from the original coursework.
+
 ## Course and original date
 
 - **Course / المادة:** CSC 484 - Information Retrieval / استرجاع المعلومات, King Saud University.
